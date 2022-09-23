@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>XML to JSON proxy testing</title>
+<style>
+#output { 
+width: 100%; 
+text-align: center; 
+padding: 12px 0px; 
+margin: 10px 0px; 
+border: 0.5px solid; 
+background-color: #c0c0c0; 
+}
+input { padding: 16px 18px; }
+input[type="text"] { width: 65%; } 
+input[type="submit"] { width: 20%; } 
+</style>
+</head>
+<body>
+<h1>XML to JSON Proxy</h1>
+<div id="output"></div>
+<div>For more information, please please refer to:<br />
+<a href="http://www.sitepoint.com/php-xml-to-json-proxy/">How to Create an XML to JSON Proxy Server in PHP</a></div>
+<div><a href="xmlproxy.zip"><strong>Download xmlproxy.zip</strong></a></div>
+<div>This example code was developed by <a href="http://twitter.com/craigbuckler">Craig Buckler</a> of <a href="http://optimalworks.net/">OptimalWorks.net</a> for <a href="http://sitepoint.com/">SitePoint.com</a>.</div>
+<div>It can be used without any restrictions but please don't expect 24/7 support! A link back to <a href="http://www.sitepoint.com/">SitePoint.com</a> is appreciated.</div>
+<p></p>
+<script>
+// XML feed
+let formUrl = `
+<form action="proxy.php?">
+<input type="text" name="url" placeholder="https://xml-proxy.pages.dev/example.xml">
+<input type="submit" value="Go">
+</form>
+`;
+document.getElementById("output").innerHTML = formUrl;
+</script>
+</body>
+</html>
